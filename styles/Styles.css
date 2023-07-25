@@ -1,0 +1,498 @@
+/* Estilos de texto*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url("./Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url("./Montserrat/Montserrat-Bold.ttf");
+}
+
+
+@font-face {
+    font-family: "Montserrat-semibold";
+    src: url("./Montserrat/Montserrat-SemiBold.ttf");
+}
+
+h1 {
+    font-family: "Montserrat-bold";
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family: "Montserrat-bold";
+    font-size: 20px;
+    color: #b2b2b2;
+    text-align: left;
+}
+
+.h3-experiencia {
+    font-family: "Montserrat-bold";
+    font-weight: 600;
+    font-size: 20px;
+    color: gray;
+}
+
+.texto-trabajo{
+    margin-top: 10px;
+}
+
+p {
+    font-family: "Montserrat-regular"; 
+    text-align: justify;
+}
+/* Fin estilos de texto*/
+
+
+
+
+/* Estilos de header y footer*/
+.header{
+    padding-top: 2rem;
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    flex-flow: row wrap;
+
+    justify-content: space-between;
+}
+
+.ul-nav{
+    font-family: "Montserrat-regular";
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.ul-nav-2{
+    font-family: "Montserrat-regular";
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    align-items: center;
+    gap: .5rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.margen-navbar{
+    margin-bottom: 2rem;
+}
+
+.footer{
+    text-decoration: none;
+    padding-top: 2rem;
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    flex-flow: row wrap;
+
+    justify-content: space-between;
+}
+
+.ul-footer{
+    text-align: left;
+    font-family: "Montserrat-regular";
+    justify-content: start;
+    align-content: center;
+    list-style-type: none;
+}
+
+.ul-footer li{
+    padding: .2rem;
+}
+
+.div-footer{
+    display: flex;
+    gap: 1rem;
+}
+
+.ul-footer-2{
+    font-family: "Montserrat-regular";
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    gap: .5rem;
+    padding-right: 1rem;
+}
+/* Fin estilos de header y footer*/
+
+
+
+
+/* Estilos Grid */
+
+.grilla{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr; 
+    
+    height: auto;
+
+    text-decoration: none;
+    padding-bottom: 40px;
+}
+
+.grilla-entrada-index{
+    display: grid;
+    grid-template-columns: fr 4fr 2fr; 
+    
+    height: auto;
+
+    text-decoration: none;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 578px){
+
+    .grilla-entrada-index{
+        margin-bottom: 10px;
+    }
+
+    .grilla-entrada-index div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 1fr;
+
+        
+        height: auto;
+    
+        text-decoration: none;
+    }
+
+    .al-medio-foto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start; 
+        gap: 2rem;
+    }
+
+}
+
+.al-medio-foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.grilla-codigo{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    
+    height: auto;
+
+    text-decoration: none;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1100px) {
+    .grilla-codigo{
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+    
+        padding-bottom: 40px;
+    }
+
+    .grilla-codigo div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divScroll{
+        padding: 20px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        background-color: #525050;
+        color: white;
+        text-align: left;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 578px) {
+    .grilla-codigo{
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+    
+        padding-bottom: 40px;
+    }
+
+    .grilla-codigo div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divScroll{
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: #525050;
+        color: white;
+        text-align: left;
+        width: 70%;
+        overflow: scroll;
+        grid-area: codigo;
+    }
+}
+
+.divScroll{
+    padding: 10px;
+    background-color: #525050;
+    color: white;
+    text-align: left;
+    height: 400px;
+    overflow: scroll;
+}
+
+.grilla-codigo div{
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; 
+        
+        height: auto;
+    
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 578px) {
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr; 
+        
+        height: auto;
+    
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+}
+
+
+.grilla-sticky{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    
+    height: auto;
+
+    margin-bottom: 10px;
+    text-decoration: none;
+    position: sticky;
+    top: 80px;
+}
+
+@media (max-width: 800px) {
+    .grilla-sticky{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        
+        height: auto;
+
+        margin-bottom: 30px;
+        text-decoration: none;
+        position: sticky;
+        top: 80px;
+    }
+}
+
+@media (max-width: 578px) {
+    .grilla-sticky{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr; 
+        
+        height: auto;
+    
+        margin-bottom: 40px;
+        text-decoration: none;
+        position: sticky;
+        top: 80px;
+    }
+}
+
+.espacio-blanco{
+    background-color: transparent;
+    justify-self: center;
+    align-self: center;
+}
+
+.al-medio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start; 
+}
+
+.al-medio-scroll{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.al-medio-scroll img{
+    width: 70%;
+}
+
+.al-medio-sticky{
+    font-family: "Montserrat-semibold";
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border: 1px solid #b1b1b1;
+    margin-bottom: 40px;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.al-medio img{
+    margin-right: 2rem; 
+}
+
+.grilla-espacio{
+    padding-bottom: 1rem; 
+}
+/* Fin estilos Grid */
+
+
+
+
+/* Estilos main */
+.SectionSegundaParte{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+.IrArriba p{
+    font-family: "Montserrat-semibold";
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lineaExperiencia{
+    width: 40px;
+    border: none;
+    height: 5px;
+    background-color: #b2b2b2;
+}
+
+.Imagen-trabajos img{
+    margin-bottom: 1rem;
+}
+
+.espacio-arriba{
+    margin-top: 40px;
+}
+
+.EspacioTrabajo{
+    margin-bottom: 30px;
+}
+/* Fin estilos main */
+
+
+
+
+/* Inicio estilos componentes */
+.margin-slider{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.espacio-cajas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.espacio-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control-espacio{
+    gap: 1rem;
+}
+
+.espacio-filas-imagenes div{
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.espacio-filas-formulario{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
